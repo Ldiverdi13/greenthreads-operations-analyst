@@ -34,7 +34,9 @@ Context	The verified state of the engagement: the unestablished opening date, su
 Format	Finding first with its inputs, then options, then recommendation and owner. Forward-looking figures labeled as planning inferences. Closes with what could not be verified.
 Knowledge files
 
-Twenty-five files uploaded to the project. 00_PROJECT_CONTEXT.md is read first and acts as the source of truth; the raw datasets are what the assistant computes from.
+Twenty-five files uploaded to the project, all published in knowledge/ so the build can be inspected or rebuilt. 00_PROJECT_CONTEXT.md is read first and acts as the source of truth; the raw datasets are what the assistant computes from.
+
+GreenThreads is a simulated company and all data is coursework material, so the full set is published. In a real engagement the applicant file and the executed supply agreement would stay in an access-controlled environment, for the reasons set out in the governance section below.
 
 Context and case
 
