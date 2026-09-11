@@ -22,9 +22,9 @@ The assistant I built in HW4 surfaced the finding that shaped the final recommen
 
 | Deliverable | What it is | Built by |
 |---|---|---|
-| [HW1 · Functional Brief](knowledge/HW1_Functional_Brief.pdf) | Map of the Operations function, workflow cadences, and seven AI opportunities ranked by the MIT Sloan levels | Team: Isra Denaguir, Ivette Bruce, Chris Sudyka, Lucas Diverdi |
-| [HW2 · Document Intelligence Brief](knowledge/HW2_Synthesis_Brief.pdf) | Cross-source synthesis of the supplier PO, receiving SOP, and master supply agreement, with every claim traced to a quoted passage | Team (same as above) |
-| [HW3 · Data Intelligence One-Pager](knowledge/HW3_OnePager.pdf) | One-page executive recommendation built on 96 purchase orders and 134 days of store sales, plus the [working analysis workbook](knowledge/HW3_Analysis_Workbook_v2.xlsx) | Lucas Diverdi |
+| [HW1 · Functional Brief](HW1_Functional_Brief.pdf) | Map of the Operations function, workflow cadences, and seven AI opportunities ranked by the MIT Sloan levels | Team: Isra Denaguir, Ivette Bruce, Chris Sudyka, Lucas Diverdi |
+| [HW2 · Document Intelligence Brief](HW2_Synthesis_Brief.pdf) | Cross-source synthesis of the supplier PO, receiving SOP, and master supply agreement, with every claim traced to a quoted passage | Team (same as above) |
+| [HW3 · Data Intelligence One-Pager](HW3_OnePager.pdf) | One-page executive recommendation built on 96 purchase orders and 134 days of store sales, plus the [working analysis workbook](knowledge/HW3_Analysis_Workbook_v2.xlsx) | Lucas Diverdi |
 | **HW4 · Custom AI Assistant** | The GreenThreads Operations AI Analyst: [overview](HW4_README.md), [instructions](instructions/), [knowledge files](knowledge/), and [nine documented tests](testing/) | Lucas Diverdi |
 | [HW5 · Executive Brief](HW5_Executive_Brief.pdf) | The quarter told as one story, ending in a decision for the CEO and CFO | Lucas Diverdi |
 
