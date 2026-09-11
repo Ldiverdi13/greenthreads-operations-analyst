@@ -1,0 +1,68 @@
+# GreenThreads Operations AI Analyst
+
+**Lucas Diverdi** · AI.205: AI Integration in Business I · Prof. Jeff Eyet · Summer 2026
+
+I spent this quarter as the Operations lead on a consulting team hired by GreenThreads, a sustainable apparel company opening its thirteenth store in Denver with 90 days on the clock and no new corporate headcount. My job was to find where AI could absorb Operations work nobody had time to do, then build something that actually does it.
+
+This repository holds every deliverable from that engagement, from the first map of the function to a working AI assistant and the executive brief that recommends a decision to the CEO and CFO.
+
+> **Start here:** [HW5 Executive Brief](05_HW5_Executive_Brief/) · [The assistant's test results](04_HW4_Custom_Assistant/testing/test_plan_and_results.md)
+
+---
+
+## The short version
+
+The Operations goal all quarter was getting four launch products onto the Denver sales floor on time. Across four assignments the same lesson kept surfacing: **a promised date is not a plan.**
+
+The supplier's confirmation letter said it expected no issues. The contract behind it called that date a good-faith estimate with no penalty for missing it. The shipment data showed both Vietnam suppliers late on every completed order. Four departments were planning to an October 12 opening that no document ever set and the lease made impossible.
+
+The assistant I built in HW4 found the finding that shaped the final recommendation: no purchase order for one of the four launch products existed anywhere, two weeks after its order deadline had passed. The client later confirmed the order had been missed.
+
+## What's in here
+
+| Folder | What it is | Built by |
+|---|---|---|
+| [`01_HW1_Functional_Brief`](01_HW1_Functional_Brief/) | Map of the Operations function, workflow cadences, and seven AI opportunities ranked by the MIT Sloan levels | Team: Isra Denaguir, Ivette Bruce, Chris Sudyka, Lucas Diverdi |
+| [`02_HW2_Document_Intelligence`](02_HW2_Document_Intelligence/) | Cross-source synthesis of the supplier PO, receiving SOP, and master supply agreement, with every claim traced to a quoted passage | Team (same as above) |
+| [`03_HW3_Data_Intelligence`](03_HW3_Data_Intelligence/) | One-page executive recommendation built on 96 purchase orders and 134 days of store sales, plus the working analysis workbook | Lucas Diverdi |
+| [`04_HW4_Custom_Assistant`](04_HW4_Custom_Assistant/) | The GreenThreads Operations AI Analyst: instructions, knowledge file list, nine documented tests, and the write-up | Lucas Diverdi |
+| [`05_HW5_Executive_Brief`](05_HW5_Executive_Brief/) | The quarter told as one story, ending in a decision for the CEO and CFO | Lucas Diverdi |
+
+Each folder has its own short README with a link to the live Google Doc or Sheet and a PDF copy, so everything opens without signing in.
+
+## How the assistant works
+
+The assistant is a Claude project holding 25 source files: the case brief, Operations shipment and catalog data, the supplier documents, the HW3 findings, and the Finance, HR, and Marketing datasets that feed Operations decisions. Its instructions follow the Persona, Task, Context, Format structure, and its rules come straight from what went wrong earlier in the quarter.
+
+- **It labels every claim** as verified, inferred, or unverifiable, and keeps the label attached every time the claim appears.
+- **It computes instead of estimating.** If a number is not in the files or derivable from them, it says the number does not exist.
+- **It stays in its lane.** Operations is the default. Another function's data is an input, never a recommendation, unless the chat opens with a declared mode such as `MODE: HR`.
+- **It challenges false premises.** Asked to confirm buffer against an October 12 opening, its first word was "No."
+
+## What testing showed
+
+I ran nine tests in fresh chats: five realistic Operations tasks and four deliberate attempts to break it.
+
+**What held.** Every number across all nine responses was recomputed against the source files and matched. It refused all four break attempts without inventing anything, including a request for a freight cost that appears in no file. It also caught flaws in our own earlier work, like a supplier average that only counts orders that eventually arrived.
+
+**What broke.** It would not stay short. A Monday-morning shipment question got over a thousand words that opened with methodology. I added a rule to lead with the action and keep answers brief; prioritization improved right away, but length only dropped about 25%. My conclusion: instruction-level control over grounding is much stronger than instruction-level control over length. The reliable fix is stating a length in the request, which worked every time.
+
+**What a person still owns.** Anything that releases money, changes a supplier relationship, or goes in front of the CFO. The assistant calculates and flags. People decide. It also only knows what its context file tells it, so someone has to keep that file current.
+
+Full prompts, verbatim responses, and verdicts are in [`test_plan_and_results.md`](04_HW4_Custom_Assistant/testing/test_plan_and_results.md).
+
+## Tools
+
+Claude (Opus, reasoning tier) in a Claude project for document analysis and the assistant; ChatGPT (reasoning tier) for parts of HW1 and HW3; Python with pandas to recompute every figure independently; Google Sheets for the reproducible workbook.
+
+## A note on data
+
+The GreenThreads case pack is course material, and one of its files contains individual applicant records. In keeping with the governance rules in my own briefs, the raw case datasets are not republished here. The analysis workbook and every derived figure are included so the work can be retraced.
+
+## About me
+
+I run the support team and train customers at BuildingPoint Midwest & Gulf Coast, a Trimble construction technology dealer, and I'm finishing an Associate's degree in Marketing at Campus. Outside of class I've taught myself the Claude API, retrieval-augmented generation, and MCP servers, mostly by building tools for the support work I do every day.
+
+What I'd bring to a team adopting AI is the part this repository tries to show: the tools do the reading and the arithmetic, and the job is knowing which date was never real, which number is a floor, and which question belongs to someone else.
+
+**Contact:** [LinkedIn URL] · [email]
