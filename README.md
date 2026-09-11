@@ -61,4 +61,3 @@ I run the support team and train customers at BuildingPoint Midwest & Gulf Coast
 
 What I'd bring to a team adopting AI is the part this repository tries to show: the tools do the reading and the arithmetic, and the job is knowing which date was never real, which number is a floor, and which question belongs to someone else.
 
-**Contact:** PASTE_CONTACT_INFO
