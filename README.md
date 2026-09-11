@@ -22,11 +22,11 @@ The assistant I built in HW4 surfaced the finding that shaped the final recommen
 
 | Deliverable | What it is | Built by |
 |---|---|---|
-| [HW1 · Functional Brief](PASTE_HW1_LINK) | Map of the Operations function, workflow cadences, and seven AI opportunities ranked by the MIT Sloan levels | Team: Isra Denaguir, Ivette Bruce, Chris Sudyka, Lucas Diverdi |
-| [HW2 · Document Intelligence Brief](PASTE_HW2_LINK) | Cross-source synthesis of the supplier PO, receiving SOP, and master supply agreement, with every claim traced to a quoted passage | Team (same as above) |
-| [HW3 · Data Intelligence One-Pager](PASTE_HW3_LINK) | One-page executive recommendation built on 96 purchase orders and 134 days of store sales, plus the [working analysis workbook](PASTE_HW3_WORKBOOK_LINK) | Lucas Diverdi |
+| [HW1 · Functional Brief](knowledge/HW1_Functional_Brief.pdf) | Map of the Operations function, workflow cadences, and seven AI opportunities ranked by the MIT Sloan levels | Team: Isra Denaguir, Ivette Bruce, Chris Sudyka, Lucas Diverdi |
+| [HW2 · Document Intelligence Brief](knowledge/HW2_Synthesis_Brief.pdf) | Cross-source synthesis of the supplier PO, receiving SOP, and master supply agreement, with every claim traced to a quoted passage | Team (same as above) |
+| [HW3 · Data Intelligence One-Pager](knowledge/HW3_OnePager.pdf) | One-page executive recommendation built on 96 purchase orders and 134 days of store sales, plus the [working analysis workbook](knowledge/HW3_Analysis_Workbook_v2.xlsx) | Lucas Diverdi |
 | **HW4 · Custom AI Assistant** | The GreenThreads Operations AI Analyst: [overview](HW4_README.md), [instructions](instructions/), [knowledge files](knowledge/), and [nine documented tests](testing/) | Lucas Diverdi |
-| [HW5 · Executive Brief](HW5_Executive_Brief.pdf) | The quarter told as one story, ending in a decision for the CEO and CFO ([live Google Doc](PASTE_HW5_LINK)) | Lucas Diverdi |
+| [HW5 · Executive Brief](HW5_Executive_Brief.pdf) | The quarter told as one story, ending in a decision for the CEO and CFO | Lucas Diverdi |
 
 ## How the assistant works
 
@@ -60,4 +60,3 @@ The `knowledge` folder holds the GreenThreads case pack exactly as the assistant
 I run the support team and train customers at BuildingPoint Midwest & Gulf Coast, a Trimble construction technology dealer, and I'm finishing an Associate's degree in Marketing at Campus. Outside of class I've taught myself the Claude API, retrieval-augmented generation, and MCP servers, mostly by building tools for the support work I do every day.
 
 What I'd bring to a team adopting AI is the part this repository tries to show: the tools do the reading and the arithmetic, and the job is knowing which date was never real, which number is a floor, and which question belongs to someone else.
-
